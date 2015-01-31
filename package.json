@@ -1,0 +1,19 @@
+{
+  "name": "es6playground",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-6to5": "~3.0.0",
+    "systemjs-builder": "~0.6.0",
+    "gulp-jasmine": "~2.0.0",
+    "gulp-clean": "~0.3.1",
+    "gulp-sequence": "~0.3.1"
+  }
+}
