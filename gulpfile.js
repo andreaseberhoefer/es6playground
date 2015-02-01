@@ -7,7 +7,7 @@ var jasmine = require('gulp-jasmine');
 var clean = require('gulp-clean');
 
 
-var PATHES = {
+var PATHS = {
     src: 'src/**/*.js',
     spec: 'spec/**/*.spec.js',
     e5Target: 'target',
@@ -26,7 +26,7 @@ var SYSTEM_CONFIG = {
         //minify: true,
         //sourceMaps: true,
         config: {
-            baseURL: path.resolve(PATHES.e5Src)
+            baseURL: path.resolve(PATHS.e5Src)
         }
     }
 };
@@ -34,21 +34,21 @@ var SYSTEM_CONFIG = {
 gulp.task('transpile', ['transpile:src', 'transpile:spec']);
 
 gulp.task('transpile:src', function() {
-    return gulp.src(PATHES.src)
+    return gulp.src(PATHS.src)
         .pipe(to5())
-        .pipe(gulp.dest(PATHES.e5Src));
+        .pipe(gulp.dest(PATHS.e5Src));
 });
 
 gulp.task('transpile:spec', function() {
-    return gulp.src(PATHES.spec)
+    return gulp.src(PATHS.spec)
         .pipe(to5())
-        .pipe(gulp.dest(PATHES.e5Spec));
+        .pipe(gulp.dest(PATHS.e5Spec));
 });
 
 gulp.task('transpile:browser', function() {
-    return gulp.src(PATHES.src)
+    return gulp.src(PATHS.src)
         .pipe(to5(TO5_CONFIG))
-        .pipe(gulp.dest(PATHES.e5Src));
+        .pipe(gulp.dest(PATHS.e5Src));
 });
 
 gulp.task('bundle:app', function() {
