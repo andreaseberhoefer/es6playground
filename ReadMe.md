@@ -9,8 +9,15 @@ This project is a template for ES6-projects. It provides a gulp build file, for 
 * [gulp](http://gulpjs.com/) `npm install gulp -g`
 * [jasmine](http://jasmine.github.io/) `npm install jasmine -g`
 
-## Gulp Tasks
+## Setup
 
+* clone this repository `git clone git@github.com:andreaseberhoefer/es6playground.git`
+* go into the directory `cd es6playground`
+* run `npm install`
+* run `gulp test`
+* Write your own es6 Scripts under src
+
+## Gulp Tasks
 
 ### gulp test
 
